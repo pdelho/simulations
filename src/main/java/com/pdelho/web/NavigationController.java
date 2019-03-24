@@ -38,23 +38,5 @@ public class NavigationController {
 		return "index";
 	}
 
-//	@RequestMapping(value = "/about", method = RequestMethod.GET)
-//	public String about(Model model) {
-//		return "about";
-//
-//	}
-	
-	
-	@RequestMapping(value = "/contact", method = RequestMethod.GET)
-	public String contact(Model model) {
-		return "contact";
-
-	}
-	
-	@RequestMapping(value = "/cv", method = RequestMethod.GET)
-	public String cv(Model model) {
-		return "cv";
-
-	}
 
 }
