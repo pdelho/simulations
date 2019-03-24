@@ -12,6 +12,10 @@ public class PartyVotes implements Comparable<PartyVotes> {
 		this.numberOfVotes = numberOfVotes;
 	}
 
+	public PartyVotes() {
+		super();
+	}
+
 	public Integer getNumberOfVotes() {
 		return numberOfVotes;
 	}
