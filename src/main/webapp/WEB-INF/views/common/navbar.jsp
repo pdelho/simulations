@@ -14,6 +14,9 @@
                         <a class="dropdown-item<%=request.getRequestURI().contains("/champions/simulator") ? " active " : " " %>" href="<spring:url value ="/champions"/>">Champions Simulator</a>
                     </div>
                	</li>
+                <li class="nav-item<%=request.getRequestURI().endsWith("/elections.jsp") ? " active " : " " %>">
+                    <a class="nav-link" href="<spring:url value ="/elections"/>">Elections</a>
+                </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Other Pages
