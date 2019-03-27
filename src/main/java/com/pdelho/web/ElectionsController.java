@@ -37,7 +37,7 @@ public class ElectionsController {
 	@RequestMapping(method = RequestMethod.POST)
 	public String resultSimulation(@ModelAttribute("partyVotesForm") PartyVotesForm partyVotesForm, Model model) 
 	{
-		Map<String, Integer> result = DistrictDistributionService.getSeatsByProvince(partyVotesForm.getPartyVotes(), partyVotesForm.getSeats());
+		Map<String, Integer> result = DistrictDistributionService.getRepresentatives(partyVotesForm.getPartyVotes());
 		model.addAttribute("result", result);
 		return Pages.Elections.ELECTIONS_RESULT;
 	}

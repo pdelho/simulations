@@ -6,8 +6,6 @@ public class PartyVotesForm {
 
 	private List<PartyVotes> partyVotes;
 	
-	private int seats;
-	
 	public PartyVotesForm(List<PartyVotes> partyVotes) {
 		super();
 		this.partyVotes = partyVotes;
@@ -25,12 +23,4 @@ public class PartyVotesForm {
 		this.partyVotes = partyVotes;
 	}
 	
-	public int getSeats() {
-		return seats;
-	}
-
-	public void setSeats(int seats) {
-		this.seats = seats;
-	}
-
 }
